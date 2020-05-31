@@ -1,5 +1,5 @@
 import discord.ext.commands
-
+import datetime
 
 class AddCommand(commands.Cog):
     def __init__(self, bot):
@@ -16,7 +16,8 @@ class AddCommand(commands.Cog):
         return
 
     @add.subcommand()
-    async def run(self, ctx, run: str, runsize: int):
+    async def run(self, ctx, run: str, runsize: int, rundate: date, runtime: time):
+        '''Add a new run with a given name, amount of people in the run and a date and time.'''
         return
 
     @add.error

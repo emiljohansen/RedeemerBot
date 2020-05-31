@@ -22,6 +22,7 @@ async def on_ready():
     print(bot.user.id)
     bot.add_cog(AddCommand(bot))
     bot.add_cog(UserManagement(bot))
+    bot.add_cog(AvailabiltyCommands(bot))
 
 @bot.event()
 async def on_message(message):

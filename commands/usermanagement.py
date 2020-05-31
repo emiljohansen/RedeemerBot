@@ -16,3 +16,7 @@ class UserManagement(commands.Cog):
     @commands.command()
     async def newmod(self, ctx, user):
         return
+
+    @commands.command()
+    async def rmmod(self, ctx, user):
+        return
